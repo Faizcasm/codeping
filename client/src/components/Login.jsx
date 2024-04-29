@@ -16,7 +16,7 @@ function Login() {
     const submit =(e)=>{
       setLoading(true)
         e.preventDefault();
-        axios.post('https://servercodeping.vercel.app/login',{username,password},{headers: {
+        axios.post('https://codepingfaizan.vercel.app/login',{username,password},{headers: {
   'Access-Control-Allow-Origin' : '*',
   'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
 },withCredientials:true})
