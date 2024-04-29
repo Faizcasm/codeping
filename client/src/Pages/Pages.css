@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    height: 75vh;
+    margin-top: -40%;
+text-align: center;
+}
+.up{
+    width: 100%;
+    height: 75vh;
+    margin-top: -30%;
+}
+.profile-div{
+    width: 40%;
+    height: 200px;
+    background-color: darkblue;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-left: 30%
+}
+.profile-div img{
+    width: 20%;
+    margin-top: 10px;
+    border-radius: 50%;
+    height: 20vh;
+}
+h1{
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+button{
+    background-color: white;
+    cursor: pointer;
+    border: none;
+}
+/* body{
+    height: 10px;
+} */
+.details{
+    width: 50%;
+    text-align: center;
+    color: white;
+    height: 200px;
+    border-radius: 20px;
+    margin-left: 25%;
+    background-color: darkblue;
+}
+.details button{
+    margin-top: 20px;
+    background-color: azure;
+    border-radius: 10px;
+font-size: 17px;
+    height: 30px;
+}
+.details input{
+    height: 30px;
+    width: 60%;
+}
+.profile-div h2{
+    margin-top: 15px;
+    font-family:sans-serif;
+}
+.payment-top{
+    margin-top: -10px;
+}
+.payment-div{
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+    /* height: 50vh; */
+}
+.payment-div input{
+    margin-top: 10px;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+}
+.payment-div button{
+    margin-top: 10px;
+    width: 100px;
+    font-size: 17px;
+    background-color: orange;
+    color: black;
+    border-radius: 20px;
+    height: 30px;
+}
+.coffee{
+    color: orange;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+.pa{
+    border: 2px solid red;
+}
+.imgdiv img{
+  width: 100%;
+  height: 140vh;
+}
+@media  screen and (max-width:700px) {
+    .imgdiv img{
+        width: 100%;
+        height: 85vh;
+      }
+    .profile-div{
+        width: 100%;
+        height: 300px;
+        background-color: darkblue;
+        border-radius: 30px;
+        text-align: center;
+        color: white;
+        margin-top: 100px;
+        font-size: 10px;
+        letter-spacing: 2px;
+        margin-left: 0px;
+    }
+    .profile-div img{
+        width: 25%;
+        margin-top: 10px;
+        border-radius: 50%;
+        height: 20vh;
+    }
+    .profile-div h2{
+        margin-top: 1px;
+        font-family:sans-serif;
+    }
+}

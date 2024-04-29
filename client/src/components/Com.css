@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    height: 100vh;
+}
+.wrapper{
+background-color: white;
+padding: 3rem;
+border-radius: 25px;
+width: 25rem;
+}
+/* bg-warning p-3 rounded w-25 */
+h2{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form{
+    margin-bottom: 1rem;
+}
+#avatar{
+    background-color: red;
+   height: 30px;
+   color: white;
+}
+.control{
+    border-radius: 0;
+    height: 30px;
+    width: 100%;
+}
+.submit{
+background-color: darkblue;
+width: 50%;
+
+margin-left: 25%;
+height: 30px;
+color: white;
+border-radius: 20px;
+font-size: 14px;
+margin-top: 10px;
+}
+p{
+    text-align: center;
+    margin-top: 10px;
+}
+.login{
+    background-color: gray;
+    width: 50%;
+    margin-left: 25%;
+    height: 30px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.update-form{
+    width: 20%;
+    height: 200px;
+    border-radius: 20px;
+    border: 30px solid darkblue;
+    margin-left: 40%;
+   
+    background-color: darkblue;
+    color: white;
+}
+.update-form input{
+    width: 100%;
+    height: 30px;
+}
+.update{
+    width: 100px;
+    margin-left: 30%;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 30px;
+}
+.up{
+    width: 100%;
+    margin-top: 100%;
+background-color: aquamarine;
+}
+.postform{
+    background-color: darkblue;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    padding-top: 30px;
+}
+.postimg{
+   background-color: red;
+   color: white;
+}
+.postform label{
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.postform button{
+    height: 30px;
+    color:whitesmoke;
+    font-size: 15px;
+    border-radius: 30px;
+    background-color: gray;
+    border-left: 20px solid gray;
+    border-right: 20px solid gray;
+}
+.postform input{
+    width: 50%;
+    height: 30px;
+}
+.post{
+    margin-top: -10px;
+}
+.postscontainer{
+    background-color: darkblue;
+    width: 100%;
+    text-align: center;
+    border: 3px solid red;
+    /* margin-top: 10px; */
+    padding-top: 30px;
+}
+.postsimg{
+    width: 90%;
+    border-radius: 10%;
+    background-size: cover;
+    height: 100%;
+}
+.postscontainer h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    
+}
+.postscontainer h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+.comment{
+    width: 100%;
+}
+.comment input{
+    width: 20%;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid brown;
+}
+.comment button{
+    height: 30px;
+    background-color: crimson;
+    width: 50px;
+    color: white;
+    border-radius: 5px;
+}
+.loading{ 
+    background-color: darkblue;
+    align-items: center;
+    height: 100vh;
+    padding-top: 200px;
+}
+
+.postscontent{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+.delete{
+   
+    border-radius: 5px;
+    border: 2px solid chocolate;
+    height: 30px;
+    color: white;
+    background-color: chocolate;
+}
+.admin{
+    width: 100%;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    border-radius: 20px;
+}
+.h234{
+    background-color: darkorange;
+    color: darkblue;
+}
+.admin img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.address{
+    font-size: 20px;
+    margin-top: -10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.map{
+    overflow: hidden;
+    height: 0;
+    position: relative;
+    padding-bottom: 30%;
+    height: 70vh;
+}
+.map iframe{
+    border: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
