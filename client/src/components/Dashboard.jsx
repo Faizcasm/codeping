@@ -14,7 +14,7 @@ function Dashboard() {
   useEffect(() => {
     const getUser = async() => {
       await axios.get('https://codepingfaizan.vercel.app/user',{headers: {
-  'Access-Control-Allow-Origin' : 'https://codepingfaizan.vercel.app',
+  'Access-Control-Allow-Origin' : 'https://codepingfaizan.vercel.app/user',
   'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
 },withCredientials:true})
         .then(res => {
