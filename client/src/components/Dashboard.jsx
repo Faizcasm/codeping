@@ -12,7 +12,7 @@ function Dashboard() {
   const [loading,setLoading]=useState(false)
   useEffect(() => {
     const getUser = async() => {
-      await axios.get('http://localhost:500/user', { withCredentials: true })
+      await axios.get('https://servercodeping.vercel.app/user', { withCredentials: true })
         .then(res => {
           setLoading(true)
           setUser(res.data);
