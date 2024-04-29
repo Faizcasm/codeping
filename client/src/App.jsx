@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react'
 import './App.css'
+import axios from 'axios'
 import Navbar from './Navbar'
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
 import UserContextProvider from './context/user.jsx'
@@ -18,7 +19,10 @@ import Admin from './components/Admin.jsx'
 import Admindash from './components/Admindash.jsx'
 import Maps from './components/Maps.jsx'
 function App() {
- 
+axios.defaults.headers.get['Accepts'] = 'application/json';
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+axios.defaults.headers.common['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept';
+
   return (
     <UserContextProvider>
    <Toaster/>
