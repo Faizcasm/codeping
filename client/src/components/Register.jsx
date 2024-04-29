@@ -19,7 +19,7 @@ function Register() {
     const submit =(e)=>{
       setLoading(true)
         e.preventDefault();
-        axios.post('https://servercodeping.vercel.app/register',data,{withCredientials:true})
+        axios.post('https://codepingfaizan.vercel.app/register',data,{withCredientials:true})
         .then(res=>{
          
             console.log(res);
