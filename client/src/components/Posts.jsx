@@ -18,7 +18,7 @@ function Posts() {
     data.append('postimg',postimg)
     const postsubmit =(e)=>{
         e.preventDefault()
-        axios.post('http://localhost:500/post',data,{withCredentials:true})
+        axios.post('https://codepingfaizan.vercel.app/post',data,{withCredentials:true})
         .then(res=>{
             console.log(res.data);
             console.log(res.data);
@@ -33,7 +33,7 @@ function Posts() {
  
    useEffect(() => {
     const getpost =()=>{
-        axios.get('http://localhost:500/posts',{withCredentials:true})
+        axios.get('https://codepingfaizan.vercel.app/posts',{withCredentials:true})
         .then(res=>{
             console.log(res.data);
             setData(res.data)
@@ -46,7 +46,7 @@ function Posts() {
    }, [])
    const {theme} = useContext(UserContext)
    function deletee(){
-    axios.delete('http://localhost:500/delete',{withCredentials:true})
+    axios.delete('https://codepingfaizan.vercel.app/delete',{withCredentials:true})
     .then(res=>{
         console.log(res);
         navigate('/')
