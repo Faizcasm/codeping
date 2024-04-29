@@ -47,7 +47,7 @@ function Navbar() {
  
      const logout = async()=>{
       setLoading(true)
-      const response =await axios.post('http://localhost:500/logout',{withCredientials:true})
+      const response =await axios.post('https://codepingfaizan.vercel.app/logout',{withCredientials:true})
       console.log(response);
       navigate('/login')
       setLoading(false)
