@@ -8,6 +8,7 @@ import Footer from '../Footer.jsx'
 import {toast} from 'react-hot-toast'
 import Maps from './Maps.jsx'
 function Dashboard() {
+  axios.defaults.withcredientials=false;
   const {setUser,user} = useContext(UserContext)
   const [loading,setLoading]=useState(false)
   useEffect(() => {
