@@ -10,7 +10,7 @@ function Admindash() {
    const navigate=useNavigate()
     useEffect(() => {
         const getUser = async() => {
-           axios.get('http://localhost:500/admindata', { withCredentials: true })
+           axios.get('https://codepingfaizan.vercel.app/admindata', { withCredentials: true })
             .then(res => {
               setUser(res.data);
               console.log(res.data);
