@@ -12,7 +12,7 @@ function Dashboard() {
   const [loading,setLoading]=useState(false)
   useEffect(() => {
     const getUser = async() => {
-      await axios.get('https://servercodeping.vercel.app/user',{headers: {
+      await axios.get('https://codepingfaizan.vercel.app/user',{headers: {
   'Access-Control-Allow-Origin' : '*',
   'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
 },withCredientials:true})
