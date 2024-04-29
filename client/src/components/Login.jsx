@@ -16,7 +16,10 @@ function Login() {
     const submit =(e)=>{
       setLoading(true)
         e.preventDefault();
-        axios.post('https://servercodeping.vercel.app/login',{username,password},{withCredentials: true})
+        axios.post('https://servercodeping.vercel.app/login',{username,password},{headers: {
+  'Access-Control-Allow-Origin' : '*',
+  'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+},withCredientials:true})
         .then(res=>{
           
             console.log(res);
