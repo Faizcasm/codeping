@@ -20,7 +20,7 @@ function Payment() {
         const headers={
           "Content-Type":"application/json"
         }
-        return fetch(`http://localhost:500/payment`,{
+        return fetch(`https://codepingfaizan.vercel.app/payment`,{
           method:"POST",
           headers,
           body:JSON.stringify(body)
