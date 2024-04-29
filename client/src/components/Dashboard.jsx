@@ -14,9 +14,10 @@ function Dashboard() {
   useEffect(() => {
     const getUser = async() => {
       await axios.get('https://codepingfaizan.vercel.app/user',{headers: {
-  'Access-Control-Allow-Origin' : 'https://codepingfaizan.vercel.app/user',
+  'Access-Control-Allow-Origin' : '*',
   'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-},withCredientials:true})
+       'Access-Control-Allow-Credentials': true 
+},withCredientials:true,credientials:'include'})
         .then(res => {
           setLoading(true)
           setUser(res.data);
