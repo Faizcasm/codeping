@@ -17,7 +17,7 @@ function Contact() {
   const sendmail=(e)=>{
     setLoading(true)
     e.preventDefault()
-    axios.post('http://localhost:500/mailer',{from,message,subject},{withCredentials:true})
+    axios.post('https://codepingfaizan.vercel.app/mailer',{from,message,subject},{withCredentials:true})
     .then(res=>{
       console.log(res);
       setLoading(false)
