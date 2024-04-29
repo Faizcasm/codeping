@@ -15,7 +15,7 @@ function Profile() {
     const [newemail,setEmail] =useState()
     const submit=(e)=>{
       e.preventDefault()
-      axios.post('http://localhost:500/updateuser',{newusername,newemail},{withCredentials:true})
+      axios.post('https://codepingfaizan.vercel.app/updateuser',{newusername,newemail},{withCredentials:true})
       .then(res=>{
         console.log(res);
         navigate('/')
