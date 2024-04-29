@@ -12,7 +12,7 @@ function Admin() {
     const {setAdminauth} =useContext(UserContext)
     const adminsubmit=(e)=>{
         e.preventDefault()
-        axios.post("http://localhost:500/admin",{admin,key},{withCredentials:true})
+        axios.post("https://codepingfaizan.vercel.app/admin",{admin,key},{withCredentials:true})
         .then(res=>{
             console.log(res.status);
             toast.success("Admin Logged In Successfully")
